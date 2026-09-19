@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Clinic - MyPatientHUB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="clinic-body">
+
+<header class="clinic-header">
+    <h2>MyPatientHUB</h2>
+    <input type="text" id="clinicTopSearch" placeholder="Search...">
+    <a href="dashboard.html">Dashboard</a>
+</header>
+
+<main class="clinic-page">
+
+    <div class="clinic-title">
+        <p>Home / Find Clinic</p>
+        <h1>Find a Clinic</h1>
+        <span>Search clinics and healthcare centers</span>
+    </div>
+
+    <section class="clinic-search">
+
+        <input type="text" id="clinicSearch"
+               placeholder="Search clinic or service">
+
+        <input type="text" id="clinicLocation"
+               placeholder="City or Neighborhood">
+
+        <button id="searchClinicBtn">SEARCH</button>
+
+    </section>
+
+    <div class="clinic-view">
+        <button id="clinicListBtn" class="active-clinic">☷ List</button>
+        <button id="clinicMapBtn">🗺 Map</button>
+    </div>
+
+    <section class="clinic-content">
+
+        <aside class="clinic-filter">
+
+            <h3>Filter By</h3>
+
+            <select id="clinicType">
+                <option value="">All Types</option>
+                <option value="hospital">Hospital</option>
+                <option value="clinic">Clinic</option>
+                <option value="maternity">Maternity</option>
+            </select>
+
+            <select id="clinicService">
+                <option value="">All Services</option>
+                <option value="emergency">Emergency</option>
+                <option value="maternity">Maternity</option>
+                <option value="laboratory">Laboratory</option>
+            </select>
+
+            <button id="clearClinic">CLEAR FILTERS</button>
+
+        </aside>
+
+        <section class="clinic-list" id="clinicList">
+
+            <div class="clinic-item"
+                 data-type="hospital"
+                 data-service="emergency"
+                 data-location="kabul">
+
+                <div class="clinic-icon">🏥</div>
+
+                <div>
+                    <h2>Kabul Medical Center</h2>
+                    <h4>Hospital</h4>
+                    <p>Emergency, Laboratory and Medical Services</p>
+                    <p>📍 Kabul</p>
+                    <button class="clinic-btn">VIEW CLINIC</button>
+                </div>
+
+            </div>
+
+            <div class="clinic-item"
+                 data-type="maternity"
+                 data-service="maternity"
+                 data-location="kabul">
+
+                <div class="clinic-icon">🏥</div>
+
+                <div>
+                    <h2>Mother Care Clinic</h2>
+                    <h4>Maternity Clinic</h4>
+                    <p>Pregnancy, Delivery and Women's Health</p>
+                    <p>📍 Kabul</p>
+                    <button class="clinic-btn">VIEW CLINIC</button>
+                </div>
+
+            </div>
+
+            <div class="clinic-item"
+                 data-type="clinic"
+                 data-service="laboratory"
+                 data-location="kabul">
+
+                <div class="clinic-icon">🏥</div>
+
+                <div>
+                    <h2>City Health Clinic</h2>
+                    <h4>Medical Clinic</h4>
+                    <p>General Medicine and Laboratory</p>
+                    <p>📍 Kabul</p>
+                    <button class="clinic-btn">VIEW CLINIC</button>
+                </div>
+
+            </div>
+
+            <div id="noClinic" class="no-clinic">
+                No clinics found.
+            </div>
+
+        </section>
+
+        <section id="clinicMap" class="clinic-map">
+            <div>
+                <div class="map-icon">📍</div>
+                <h2>Clinic Locations</h2>
+                <p>Clinic locations will appear here.</p>
+                <p>📍 Kabul</p>
+            </div>
+        </section>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

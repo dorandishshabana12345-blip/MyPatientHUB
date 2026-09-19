@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctor - MyPatientHUB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="doctor-body">
+
+    <!-- HEADER -->
+    <header class="doctor-header">
+
+        <div class="doctor-logo">
+            MyPatientHUB
+        </div>
+
+        <div class="doctor-top-search">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <a href="dashboard.html" class="back-dashboard">
+            Dashboard
+        </a>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="doctor-page">
+
+        <!-- TITLE -->
+        <section class="doctor-title">
+
+            <p>Home / Find Doctor</p>
+
+            <h1>Find a Doctor</h1>
+
+            <span>
+                Search Doctors and schedule an appointment
+            </span>
+
+        </section>
+
+
+        <!-- SEARCH BOX -->
+        <section class="doctor-search">
+
+            <div class="search-field">
+                <label>Doctor or Specialty</label>
+
+                <input
+                    type="text"
+                    id="doctorSearch"
+                    placeholder="Search doctor or specialty"
+                >
+            </div>
+
+
+            <div class="search-field">
+                <label>Location</label>
+
+                <input
+                    type="text"
+                    id="locationSearch"
+                    placeholder="City, Code or Neighborhood"
+                >
+            </div>
+
+
+            <button id="searchDoctorBtn">
+                SEARCH
+            </button>
+
+        </section>
+
+
+        <!-- VIEW BUTTONS -->
+        <div class="doctor-view">
+
+            <button id="mapBtn">
+                🗺 Map
+            </button>
+
+            <button id="listBtn" class="active-view">
+                ☷ List
+            </button>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <section class="doctor-content">
+
+
+            <!-- FILTER -->
+            <aside class="doctor-filter">
+
+                <h3>Filter By</h3>
+
+
+                <label>Specialty</label>
+
+                <select id="specialtyFilter">
+
+                    <option value="">All Specialties</option>
+
+                    <option value="obstetrics">
+                        Obstetrics and Gynaecology
+                    </option>
+
+                    <option value="cardiology">
+                        Cardiology
+                    </option>
+
+                    <option value="dermatology">
+                        Dermatology
+                    </option>
+
+                    <option value="neurology">
+                        Neurology
+                    </option>
+
+                </select>
+
+
+                <label>Gender</label>
+
+                <select id="genderFilter">
+
+                    <option value="">All Genders</option>
+
+                    <option value="male">
+                        Male
+                    </option>
+
+                    <option value="female">
+                        Female
+                    </option>
+
+                </select>
+
+
+                <label>Condition</label>
+
+                <select id="conditionFilter">
+
+                    <option value="">All Conditions</option>
+
+                    <option value="heart">
+                        Heart Disease
+                    </option>
+
+                    <option value="diabetes">
+                        Diabetes
+                    </option>
+
+                    <option value="pregnancy">
+                        Pregnancy
+                    </option>
+
+                </select>
+
+
+                <label>Languages</label>
+
+                <select id="languageFilter">
+
+                    <option value="">All Languages</option>
+
+                    <option value="english">
+                        English
+                    </option>
+
+                    <option value="dari">
+                        Dari
+                    </option>
+
+                    <option value="pashto">
+                        Pashto
+                    </option>
+
+                    <option value="malay">
+                        Malay
+                    </option>
+
+                </select>
+
+
+                <button id="clearFilters">
+                    CLEAR FILTERS
+                </button>
+
+            </aside>
+
+
+            <!-- DOCTOR LIST -->
+            <section class="doctor-list" id="doctorList">
+
+
+                <!-- DOCTOR 1 -->
+                <div
+                    class="doctor-item"
+                    data-specialty="obstetrics"
+                    data-gender="male"
+                    data-condition="pregnancy"
+                    data-language="english malay"
+                    data-location="kabul"
+                >
+
+                    <div class="doctor-image">
+                        👨‍⚕️
+                    </div>
+
+
+                    <div class="doctor-info">
+
+                        <h2>
+                            Dr. Muhammad Shamsir
+                        </h2>
+
+                        <h4>
+                            Obstetrics and Gynaecology
+                        </h4>
+
+                        <p>
+                            Visiting Consultant
+                        </p>
+
+                        <p>
+                            English, Malay
+                        </p>
+
+                        <p>
+                            📍 Kabul
+                        </p>
+
+                        <button class="available-btn">
+                            NEXT AVAILABLE
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DOCTOR 2 -->
+                <div
+                    class="doctor-item"
+                    data-specialty="obstetrics"
+                    data-gender="male"
+                    data-condition="pregnancy"
+                    data-language="english dari"
+                    data-location="kabul"
+                >
+
+                    <div class="doctor-image">
+                        👨‍⚕️
+                    </div>
+
+
+                    <div class="doctor-info">
+
+                        <h2>
+                            Dr. Khairullah
+                        </h2>
+
+                        <h4>
+                            Obstetrics and Gynaecology
+                        </h4>
+
+                        <p>
+                            Visiting Consultant
+                        </p>
+
+                        <p>
+                            English, Dari
+                        </p>
+
+                        <p>
+                            📍 Kabul
+                        </p>
+
+                        <button class="available-btn">
+                            NEXT AVAILABLE
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DOCTOR 3 -->
+                <div
+                    class="doctor-item"
+                    data-specialty="cardiology"
+                    data-gender="male"
+                    data-condition="heart"
+                    data-language="english dari"
+                    data-location="kabul"
+                >
+
+                    <div class="doctor-image">
+                        👨‍⚕️
+                    </div>
+
+
+                    <div class="doctor-info">
+
+                        <h2>
+                            Dr. Ahmad Rahimi
+                        </h2>
+
+                        <h4>
+                            Cardiology
+                        </h4>
+
+                        <p>
+                            Specialist Doctor
+                        </p>
+
+                        <p>
+                            English, Dari
+                        </p>
+
+                        <p>
+                            📍 Kabul
+                        </p>
+
+                        <button class="available-btn">
+                            NEXT AVAILABLE
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DOCTOR 4 -->
+                <div
+                    class="doctor-item"
+                    data-specialty="dermatology"
+                    data-gender="female"
+                    data-condition="diabetes"
+                    data-language="dari pashto"
+                    data-location="kabul"
+                >
+
+                    <div class="doctor-image">
+                        👩‍⚕️
+                    </div>
+
+
+                    <div class="doctor-info">
+
+                        <h2>
+                            Dr. Maryam Ahmadi
+                        </h2>
+
+                        <h4>
+                            Dermatology
+                        </h4>
+
+                        <p>
+                            Visiting Consultant
+                        </p>
+
+                        <p>
+                            Dari, Pashto
+                        </p>
+
+                        <p>
+                            📍 Kabul
+                        </p>
+
+                        <button class="available-btn">
+                            NEXT AVAILABLE
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NO RESULT -->
+                <div id="noDoctorResult" class="no-doctor">
+                    No doctors found.
+                </div>
+
+            </section>
+
+
+            <!-- MAP -->
+            <section id="doctorMap" class="doctor-map">
+
+                <div class="map-box">
+
+                    <div class="map-icon">
+                        📍
+                    </div>
+
+                    <h2>
+                        Doctor Locations
+                    </h2>
+
+                    <p>
+                        Doctor locations will appear here.
+                    </p>
+
+                    <div class="map-location">
+                        📍 Kabul
+                    </div>
+
+                    <div class="map-location">
+                        📍 Kabul City
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
