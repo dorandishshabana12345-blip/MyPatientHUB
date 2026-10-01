@@ -671,3 +671,73 @@ document.querySelectorAll(".clinic-btn").forEach(function(button) {
     });
 
 });
+// MARKETPLACE SEARCH
+
+const marketSearch =
+    document.getElementById("marketSearch");
+
+const marketCards =
+    document.querySelectorAll(".market-card");
+
+if (marketSearch) {
+
+    marketSearch.addEventListener("input", function () {
+
+        const text =
+            marketSearch.value.toLowerCase();
+
+        marketCards.forEach(function (card) {
+
+            const name =
+                card.dataset.name.toLowerCase();
+
+            card.style.display =
+                name.includes(text) ? "block" : "none";
+
+        });
+
+    });
+}
+
+
+// BUY BUTTON
+
+document.querySelectorAll(".buy-btn").forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        alert("Your order has been selected successfully!");
+
+    });
+
+});
+
+
+// TABLE SEARCH
+
+const tableSearch =
+    document.getElementById("tableSearch");
+
+const tableRows =
+    document.querySelectorAll("#marketTable tr");
+
+if (tableSearch) {
+
+    tableSearch.addEventListener("input", function () {
+
+        const text =
+            tableSearch.value.toLowerCase();
+
+        tableRows.forEach(function (row) {
+
+            row.style.display =
+                row.textContent
+                .toLowerCase()
+                .includes(text)
+                ? ""
+                : "none";
+
+        });
+
+    });
+}

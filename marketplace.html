@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - MyPatientHUB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="marketplace-body">
+
+    <!-- SIDEBAR -->
+    <aside class="market-sidebar">
+
+        <h2>MyPatientHUB</h2>
+
+        <a href="dashboard.html">▣ Dashboard</a>
+        <a href="#">▣ Appointments</a>
+        <a href="find-doctor.html">♙ Find Doctor</a>
+        <a href="find-clinic.html">+ Find Clinic</a>
+        <a href="#">▣ Chat</a>
+
+        <a href="marketplace.html" class="market-active">
+            ▣ Find Marketplace
+        </a>
+
+        <a href="#">♧ Find Pharmacy</a>
+        <a href="#">▤ My Dependents</a>
+        <a href="#">🛠 My Account</a>
+        <a href="#">🛠 Settings</a>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="market-main">
+
+        <!-- HEADER -->
+        <header class="market-header">
+
+            <div>
+                <p>⌂ / Marketplace</p>
+                <h2>Marketplace</h2>
+            </div>
+
+            <input
+                type="text"
+                id="marketSearch"
+                placeholder="Type here..."
+            >
+
+            <span>● Log out　⚙　♟</span>
+
+        </header>
+
+
+        <!-- MARKETPLACE -->
+        <section class="market-box">
+
+            <h2>
+                Search Marketplaces and order what you need
+            </h2>
+
+            <div class="market-cards">
+
+                <div class="market-card"
+                     data-name="Healthy Diet Food Panda">
+
+                    <img src="market-food.jpg">
+
+                    <div class="market-card-info">
+
+                        <span>Healthy Diet</span>
+                        <b>5 RM</b>
+
+                        <h3>Food Panda</h3>
+
+                        <p>
+                            Healthy food and diet products
+                            for your daily needs.
+                        </p>
+
+                        <button class="buy-btn">
+                            BUY NOW
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <div class="market-card"
+                     data-name="Healthy Diet Grab Food">
+
+                    <img src="market-food.jpg">
+
+                    <div class="market-card-info">
+
+                        <span>Healthy Diet</span>
+                        <b>10 RM</b>
+
+                        <h3>Grab Food</h3>
+
+                        <p>
+                            Healthy meals and food services
+                            for everyone.
+                        </p>
+
+                        <button class="buy-btn">
+                            BUY NOW
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <div class="market-card"
+                     data-name="Healthy Diet Deliveroo">
+
+                    <img src="market-food.jpg">
+
+                    <div class="market-card-info">
+
+                        <span>Healthy Diet</span>
+                        <b>15 RM</b>
+
+                        <h3>Deliveroo</h3>
+
+                        <p>
+                            Different types of healthy
+                            food and meals.
+                        </p>
+
+                        <button class="buy-btn">
+                            BUY NOW
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <div class="market-card"
+                     data-name="Healthy Diet Minimalist">
+
+                    <img src="market-food.jpg">
+
+                    <div class="market-card-info">
+
+                        <span>Healthy Diet</span>
+                        <b>20 RM</b>
+
+                        <h3>Minimalist</h3>
+
+                        <p>
+                            Healthy products for your
+                            daily lifestyle.
+                        </p>
+
+                        <button class="buy-btn">
+                            BUY NOW
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTS TABLE -->
+        <section class="market-results">
+
+            <h2>
+                Other results for healthy diet search
+            </h2>
+
+            <input
+                type="text"
+                id="tableSearch"
+                placeholder="Search..."
+            >
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>CATEGORY</th>
+                        <th>SERVICE BY</th>
+                        <th>DISCOUNT</th>
+                        <th>PRICE</th>
+                        <th>ID</th>
+                    </tr>
+                </thead>
+
+                <tbody id="marketTable">
+
+                    <tr>
+                        <td>🍱 Healthy Diet</td>
+                        <td>Food</td>
+                        <td>Food Panda</td>
+                        <td>0</td>
+                        <td>10 RM</td>
+                        <td>243598234</td>
+                    </tr>
+
+                    <tr>
+                        <td>🍱 Healthy Diet</td>
+                        <td>Food</td>
+                        <td>Grab Food</td>
+                        <td>5%</td>
+                        <td>15 RM</td>
+                        <td>243598235</td>
+                    </tr>
+
+                    <tr>
+                        <td>🍱 Healthy Diet</td>
+                        <td>Food</td>
+                        <td>Deliveroo</td>
+                        <td>10%</td>
+                        <td>20 RM</td>
+                        <td>243598236</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
